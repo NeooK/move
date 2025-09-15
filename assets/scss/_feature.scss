@@ -1,0 +1,37 @@
+.featured-portfolio-items-info{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+    .swiper {
+        width:80%;
+            padding-bottom: 50px;
+        }
+        .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+            height:450px;
+        }
+        .swiper-slide img {
+        display: block;
+        width: 100%;
+        }
+    .portfolio-image{
+        width: 300px;
+        height:450px;
+        img{
+            @include imgw;
+        }
+    }
+    .theme-btn-2{
+        background-color:transparent;
+        color:$header-color;
+        border: 1px solid $theme-color;
+        &:hover {
+            color: $white;
+        }
+    }
+}

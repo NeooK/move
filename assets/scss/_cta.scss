@@ -1,0 +1,774 @@
+// Photographer Section Start
+.Photographer-section {
+    .Photographer-wrapper {
+        padding: 51px 0;
+
+        @include breakpoint (max-xl) {
+            padding: 52px 0;
+        }
+
+        @include breakpoint (max-lg) {
+            padding: 52px 0;
+        }
+
+        @include breakpoint (max-md) {
+            padding: 52px 0;
+            margin: 0 auto;
+
+        }
+
+        @include breakpoint (max-sm) {
+            padding: 52px 0;
+            margin: 0 auto;
+
+        }
+
+        .section-title {
+            span {
+                font-family: $body-font;
+                font-size: 16px;
+                font-weight: 400;
+                margin-top: 10px;
+            }
+
+            h3 {
+                font-size: 32px;
+                font-style: italic;
+                font-weight: 400;
+                color: $text-color-2;
+                margin-top: 10px;
+            }
+
+            .love-icon {
+                margin-top: 30px;
+                left: -26%;
+
+            }
+        }
+
+        p {
+            font-family: $body-font;
+            font-size: 16px;
+            font-weight: 400;
+            color: $header-color-1;
+        }
+
+        .photo-button {
+            margin-top: 30px;
+        }
+
+    }
+
+    .Photographer-img {
+        margin-right: -315px;
+
+        &.style {
+            margin-top: -98px;
+        }
+
+        @include breakpoint(max-xl4) {
+            margin-right: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 518px;
+
+            @include breakpoint(max-xl) {
+                height: 505px;
+            }
+
+            @include breakpoint(max-lg) {
+                height: 500px;
+                margin-top: 19px;
+            }
+
+            @include breakpoint(max-md) {
+                height: 400px;
+                margin-top: 19px;
+            }
+
+            @include breakpoint(max-sm) {
+                height: 300px;
+            }
+        }
+
+    }
+
+}
+
+
+.Photographer-section-2 {
+    position: relative;
+
+    .Photographer-mentor {
+        margin-left: -296px;
+
+        .Photographer-img {
+            width: 645px;
+            height: 761px;
+            position: relative;
+            z-index: 99;
+
+            @include breakpoint (max-xl) {
+                width: 645px;
+                height: 661px;
+
+            }
+
+            img {
+                @include imgw;
+            }
+
+            .Photographer-image-2 {
+                position: absolute;
+                z-index: 1;
+                right: -39%;
+                top: 15%;
+                width: 361px;
+                height: 570px;
+
+                img {
+                    @include imgw;
+                }
+
+                @include breakpoint (max-xl) {
+                    width: 361px;
+                    height: 560px;
+                    right: -24%;
+                    top: 11%;
+                }
+
+                @include breakpoint (max-lg) {
+                    right: -39%;
+                    top: 11%;
+                }
+
+            }
+        }
+    }
+
+    .Photographer-wrapper {
+        padding: 57px 0px 52px 57px;
+        margin: 127px 0px 3px 103px;
+        background-color: $white;
+        position: relative;
+        z-index: 99;
+        margin-right: -302px;
+
+        @include breakpoint (max-xxl) {
+            padding: 54px 10px 40px 54px;
+            margin: 122px 0px 109px 150px;
+            margin-right: -200px;
+
+        }
+
+        @include breakpoint (max-xl) {
+            padding: 54px 10px 35px 54px;
+            margin: 74px 0px 109px 150px;
+            margin-right: -200px;
+
+        }
+
+        @include breakpoint (max-lg) {
+            padding: 95px 0px 36px 44px;
+            margin: 74px 0px 29px 172px;
+            margin-right: -265px;
+
+
+        }
+
+        @include breakpoint (max-md) {
+            margin: 0 auto;
+            padding: 29px 0px 39px 44px;
+            margin: 20px 0;
+
+
+        }
+
+        @include breakpoint (max-sm) {
+            margin: 0 auto;
+            padding: 29px 0px 39px 44px;
+            margin: 20px 0;
+
+        }
+
+        .section-title {
+            span {
+                font-family: $body-font;
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: $header-color-1;
+
+                @include breakpoint (max-lg) {
+                    font-size: 13px;
+
+                }
+            }
+
+            h2 {
+
+                @include breakpoint (max-lg) {
+                    font-size: 34px;
+
+
+                }
+            }
+
+            p {
+                font-family: $body-font;
+                font-size: 16px;
+                font-weight: 400;
+                color: $header-color-1;
+                margin-top: 25px;
+
+                @include breakpoint (max-lg) {
+                    font-size: 12px;
+
+                }
+            }
+
+        }
+
+        .Photographer-inner {
+            display: flex;
+            gap: 50px;
+            margin-top: 61px;
+
+            .Profession-Photographer {
+                position: relative;
+
+                .icon {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    background-color: $theme-color-3;
+                    border-radius: 36px;
+                    text-align: center;
+                    margin-right: 10px;
+                    margin-top: -17px;
+
+                    img {
+                        width: 25px;
+                        height: 25px;
+
+                    }
+
+                    @include breakpoint (max-md) {
+                        margin: -8px 0px;
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+
+                    }
+
+                    @include breakpoint (max-sm) {
+                        margin: -6px 0px;
+                    }
+
+                }
+
+                .content {
+                    @include breakpoint (max-lg) {
+                        margin-top: 4px;
+
+                    }
+
+                    @include breakpoint (max-md) {
+                        margin-top: 4px;
+
+                    }
+
+                    h3 {
+                        font-family: $body-font;
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin-top: 10px;
+
+                        @include breakpoint (max-lg) {
+                            font-size: 13px;
+
+                        }
+                    }
+
+                    p {
+                        font-family: $body-font;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $header-color-1;
+                        margin-top: 10px;
+
+                        @include breakpoint (max-lg) {
+                            font-size: 12px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Photographer Section End
+
+//   Photographer_history Section Start 
+.Photographer_history-section {
+    margin-top: -10px;
+
+    .Photographer-history-info {
+        .Photographer-img {
+            margin-left: -320px;
+
+            @include breakpoint(max-xl) {
+                margin-left: 0px;
+            }
+
+            img {
+                width: 100%;
+                height: 460px;
+
+                @include breakpoint(max-xl) {
+                    height: 460px;
+                }
+
+                @include breakpoint(max-lg) {
+                    height: 440px;
+                    margin: 0 auto;
+                }
+
+                @include breakpoint(max-md) {
+                    height: 400px;
+                    margin: 0 auto;
+                }
+
+                @include breakpoint(max-sm) {
+                    height: 300px;
+                    margin: 0 auto;
+                }
+            }
+
+        }
+
+
+
+
+        .Photographer_history {
+            margin-top: 40px;
+
+            @include breakpoint (max-lg) {
+                margin-left: -90px;
+                margin: 0 auto;
+
+            }
+
+            @include breakpoint (max-md) {
+                margin: 0 auto;
+                margin-left: -20px;
+            }
+
+            @include breakpoint (max-sm) {
+                margin: 0 auto;
+
+            }
+
+            .section-title {
+                span {
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-top: -10px;
+
+                    @include breakpoint (max-xl) {
+                        font-size: 15px;
+
+                    }
+
+                    @include breakpoint (max-lg) {
+                        font-size: 13px;
+
+                    }
+                }
+
+                h2 {
+                    @include breakpoint (max-xl) {
+                        font-size: 40px;
+
+                    }
+
+                    @include breakpoint (max-lg) {
+                        font-size: 37px;
+
+                    }
+                }
+
+                .love-icon {
+                    margin-top: 30px;
+                    left: -26%;
+                }
+
+                p {
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $header-color-1;
+
+                    @include breakpoint (max-xl) {
+                        font-size: 15px;
+                    }
+
+                    @include breakpoint (max-lg) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Photographer_history-section-2 {
+    .Photographer {
+        .Photographer-img {
+            margin-left: -124px;
+            width: 580px;
+            position: relative;
+            z-index: 1;
+
+            @include breakpoint (max-xxl) {
+                margin-left: -140px;
+            }
+
+            @include breakpoint (max-lg) {
+                margin: 0 auto;
+
+            }
+
+            @include breakpoint (max-md) {
+                margin: 0 auto;
+                margin-left: -50px;
+
+            }
+
+            @include breakpoint (max-sm) {
+                margin: 0 auto;
+                margin-left: -8px;
+
+            }
+
+            img {
+                object-fit: cover;
+                @include imgw;
+
+            }
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 88%;
+                position: absolute;
+                right: -48px;
+                top: 20%;
+                border: 3px solid $theme-color;
+                z-index: -1;
+
+                @include breakpoint (max-xl) {
+                    right: -30px;
+                }
+
+                @include breakpoint (max-lg) {
+                    width: 100%;
+                    height: 88%;
+                    right: -55px;
+                    top: 20%;
+                }
+
+                @include breakpoint (max-md) {
+                    display: none;
+                }
+
+                @include breakpoint (max-sm) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .Photographer_history {
+        position: relative;
+
+        @include breakpoint (max-xl) {
+            margin-left: 20px;
+
+        }
+
+        @include breakpoint (max-lg) {
+            margin: 0 auto;
+            margin-top: 50px;
+
+        }
+
+        @include breakpoint (max-md) {
+            margin: 0 auto;
+
+        }
+
+        @include breakpoint (max-sm) {
+            margin: 0 auto;
+
+        }
+
+        .section-title {
+            .love-icon {
+                margin-top: 30px;
+                left: -26%;
+            }
+        }
+
+        .Photographer-content {
+            position: relative;
+
+            h3 {
+                font-size: 27px;
+                font-weight: 400;
+            }
+
+            p {
+                font-family: $body-font;
+                font-size: 16px;
+                font-weight: 400;
+                color: $header-color-1;
+            }
+
+            .contact-info {
+                li {
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-weight: 400;
+
+                    a {
+                        color: $header-color-1;
+                        @include transition;
+
+                        span {
+                            font-family: $body-font;
+                            font-size: 16px;
+                            font-weight: 400;
+                            margin-right: 24px;
+                        }
+                    }
+                }
+            }
+
+            .social-profile {
+                position: absolute;
+                left: -5px;
+                bottom: -55px;
+                content: "";
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+                z-index: 2;
+                display: inline-block;
+                overflow: hidden;
+                z-index: 99;
+
+                ul {
+                    transform: translateY(100px);
+                    transition: all 0.6s ease-in-out;
+                    opacity: 0;
+                    visibility: hidden;
+
+
+
+                    li {
+                        margin-bottom: 10px;
+
+
+
+                        a {
+                            width: 40px;
+                            height: 40px;
+                            line-height: 40px;
+                            text-align: center;
+                            font-size: 18px;
+                            display: block;
+                            background: $white;
+                            color: $theme-color;
+                            -webkit-transition: all .4s ease-in-out;
+                            transition: all .4s ease-in-out;
+                            text-align: center;
+                            margin: 0 auto;
+                            border-radius: 50%;
+
+
+                            &:hover {
+                                background-color: $theme-color;
+                                color: $white;
+
+                            }
+                        }
+                    }
+                }
+
+                .plus-btn {
+                    z-index: 2;
+                    cursor: pointer;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    font-size: 18px;
+                    display: inline-block;
+                    background: $theme-color;
+                    color: $white;
+                    @include transition;
+                    border-radius: 50%;
+
+                    &:hover {
+                        background-color: $header-color;
+                        color: $white;
+                    }
+                }
+
+                &:hover {
+                    ul {
+                        transform: translateY(0);
+                        opacity: 1;
+                        visibility: visible;
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+// Photographer_history Section Start 
+
+
+// wedding_design Section Start
+.cta-wedding-section {
+    .section-title-area {
+        .section-title {
+            h2 {
+                font-size: 45px;
+                font-weight: 400;
+
+                @include breakpoint (max-lg) {
+                    font-size: 31px;
+                }
+
+                @include breakpoint (max-md) {
+                    font-size: 28px;
+                }
+
+                @include breakpoint (max-sm) {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .array-button {
+            position: relative;
+
+            .array-prev {
+                @include transition;
+
+                &:hover {
+                    background-color: $header-color;
+                    color: $white;
+                    @include transition;
+                }
+
+                @include breakpoint (max-md) {
+                    display: none
+                }
+            }
+
+            .array-next {
+                @include transition;
+
+                &:hover {
+                    background-color: $header-color;
+                    color: $white;
+                    @include transition;
+                }
+
+                @include breakpoint (max-md) {
+                    display: none
+                }
+            }
+        }
+    }
+
+    .wedding-design-items {
+        margin-top: 30px;
+
+        .design-image {
+            position: relative;
+            height: 340px;
+
+            img {
+                @include imgw;
+            }
+
+            @include breakpoint (max-xxl) {
+                height: 340px;
+
+                img {
+                    object-fit: cover;
+                }
+            }
+
+            @include breakpoint (max-xl) {
+                height: 340px;
+
+                img {
+                    object-fit: cover;
+                }
+            }
+
+            @include breakpoint (max-sm) {
+                height: 350px;
+            }
+
+            .video-box {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                @include breakpoint(max-md) {
+                    margin-top: 19px;
+                }
+
+                .video-btn {
+                    background: transparent;
+                    color: $white;
+                    display: inline-block;
+                    font-size: 22px;
+                    height: 55px;
+                    width: 55px;
+                    line-height: 55px;
+                    border-radius: 50%;
+                    text-align: center;
+                    border: 1px solid $white;
+                }
+
+                span {
+                    font-size: 18px;
+                    color: $white;
+                    font-family: $heading-font;
+                    font-weight: 500;
+                    margin-right: 20px;
+
+                }
+            }
+        }
+    }
+}
+
+
+
+// wedding_design Section End

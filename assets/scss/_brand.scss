@@ -1,0 +1,15 @@
+.brand-section{
+    .section-title{
+        margin-bottom:100px;
+    }
+    .brand-wrapper {
+        @include breakpoint (max-xl){
+            margin-top:7px;
+        }
+    
+        .brand-img {
+            text-align: center;
+           
+        }
+    }
+}

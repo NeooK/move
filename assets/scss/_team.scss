@@ -1,0 +1,252 @@
+.single-team-items{
+    margin-top:50px;
+    position: relative;
+    &.style{
+        margin-top:100px;
+
+    }
+    .team-image{
+        position: relative;
+        img{
+            @include imgw;
+        }
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            background: linear-gradient(359.9deg, #00060c 0.09%, rgba(22, 36, 62, 0) 99.91%);
+            opacity: 0.6;
+            transform: scale(1, 0);
+            transition: transform 500ms ease;
+            transform-origin: bottom center;
+            z-index: 1;
+        }
+    }
+    &:hover {
+        .team-image {
+            &::before {
+                transform: scale(1, 1);
+                transform-origin: top center;
+            }
+            .icon {
+                opacity: 1;
+            }
+        }
+    }
+    .team-content{
+        h3 {
+            margin-top:30px;
+            font-weight:400;
+            a {
+                &:hover {
+                    color: $theme-color;
+                    @include transition;
+                }
+            }
+        }
+        p{
+          font-size: 14px;
+          font-weight: 400;
+          color: $header-color-1;
+          margin:6px;
+          &:hover {
+            color: $theme-color;
+            @include transition;
+        }
+
+      }
+    
+    }
+    .social-profile{
+        ul{
+          li{
+            a{
+               padding:8px 10px;
+               -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+               i{ 
+                 font-size:20px;
+                }
+                &:hover {
+                    background-color: $theme-color;
+                    color: $white;
+                    border-radius:3px;
+                }
+             }
+          }
+        }
+    }
+  
+}
+.team-section-detials{
+    margin-top:-130px;
+    @include breakpoint (max-xxl){
+        margin-top:-130px;
+        
+    }
+    @include breakpoint (max-xl){
+        margin-top:26px;
+        
+    }
+    .section-title{
+        .love-icon{
+            margin-top:30px;
+            left:-26%;
+       }
+       .content{
+        @include flex;
+        gap:5px;
+        margin-top:26px;
+        span{
+            padding:10px 14px 15px;
+            background: $theme-color;
+            font-family:$heading-font;
+            color: $white;
+            font-size: 45px;
+            font-weight: 400;
+            margin-right:12px;
+            &:hover {
+                color: $theme-color;
+                background-color:$header-color;
+                @include transition;
+            }
+          }
+          p{
+            font-family:$body-font;
+            font-size: 16px;
+            font-weight: 400;
+            color:$header-color-1;
+            @include breakpoint (max-lg){
+                font-size: 13px;
+                
+            }
+          }
+
+       }
+    }
+    .team-details-progress{
+        margin-top:40px;
+        border-right: 1px solid $text-color-2;
+        padding:4px 30px;
+        .progress-area{
+            .progress-wrap {
+                .pro-items {
+                    width: 100%;
+                    &:not(:last-child) {
+                        margin-bottom: 20px;
+                    }
+                    .pro-head {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                        .title {
+                            font-size: 16px;
+                        }
+                        .point {
+                            font-size: 14px;
+                            color: $header-color;
+                        }
+                    }
+                    .progress {
+                        background:$text-color-3;
+                        justify-content: flex-start;
+                        border-radius: 100px;
+                        align-items: center;
+                        position: relative;
+                        display: flex;
+                        height:8px;
+                        width: 100%;
+                    }
+                    .progress-value {
+                        animation: load 3s normal forwards;
+                        border-radius: 100px;
+                        background: $theme-color;
+                        height: 8px;
+                        width: 0;
+                    }
+                    .style-two {
+                        animation: load2 3s normal forwards;
+                    }
+                    .style-three {
+                        animation: load3 3s normal forwards;
+                    }
+                    @keyframes load {
+                        0% {
+                            width: 0;
+                        }
+                        100% {
+                            width:80%;
+                        }
+                    }
+                    @keyframes load2 {
+                        0% {
+                            width: 0;
+                        }
+                        100% {
+                            width: 60%;
+                        }
+                    }
+                    @keyframes load3 {
+                        0% {
+                            width: 0;
+                        }
+                        100% {
+                            width:85%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  .team-details-award{
+        margin-top:40px;
+        .section-title{
+            h3{
+              font-size: 20px;
+            }
+        }
+  
+     .team-award-info{
+        margin-top:40px;
+        .team-award{
+            display: flex;
+            gap: 30px;
+            margin-top:40px;
+            .award-sertific{
+                width:206px;
+                height:130px;   
+                img{
+                    @include imgw;
+                    object-fit: cover;
+                }
+            }
+ 
+            .content{
+                .list-info{
+                    li{
+                        font-family: $body-font;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $header-color-1;
+                    }
+                 }
+                h6{
+                    font-size: 16px;
+                    margin-top:18px;
+                    a {
+                        color: $header-color;
+                        &:hover {
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+
+}

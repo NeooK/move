@@ -1,0 +1,70 @@
+
+:root {
+    
+    --body: #FFFFFF;
+    --black: #000000;
+    --white: #FFFFFF;
+    --theme: #B56D94;
+    --theme2: #70A6B1;
+    --theme3:rgba(181, 109, 148, 0.35);
+    --header: #000000;
+    --header1:#232323;
+    --text: #ededf1;
+    --text2: #888888;
+    --text3: #D9D9D9;
+    --title: #343434;
+    --title2:#a1a1a1;
+    --gray1: #F6F6F6;
+    --border: #C3C0BD;
+    --border2: #E5E5E5;
+    --bg: #F4EEE5;
+    --bg2:#FEFCFA;
+    --bg3:#F3F3F3;
+    --bg4:#E8EAEE;
+    --bg5:#F6F4F2;
+    --bg6:#0A111E;
+    --white2: rgba(255, 255, 255, 0.84);
+    --white3:rgba(255, 255, 255, 1);   
+    --box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+    --color-gradient-1:linear-gradient(102.27deg, #0E0E0E 0%, rgba(12, 10, 10, 0.88) 100%);
+    --color-gradient-2: linear-gradient(102.27deg, #0E0E0E 0%, rgba(35, 35, 35, 0.29) 100%);
+    --color-gradient-3: linear-gradient(96.78deg, #0E0E0E 2.09%, rgba(35, 35, 35, 0.29) 75.55%);
+    --color-gradient-4: linear-gradient(96.78deg, #f8f7f7 2.09%, rgba(255, 255, 255, 0.29) 75.55%);
+    --color-gradient-5: linear-gradient(96.78deg, #9c065b 2.09%, rgba(153, 7, 85, 0.886) 75.55%);
+    --color-gradient-6: linear-gradient(180deg, rgba(255, 0, 0, 0) 0%, #FF0000 100%); 
+    --color-gradient-7: linear-gradient(90deg, #FF9900 0%, #CC2500 100%);
+   
+}
+
+// Theme Color - Defualt Colors
+$black: var(--black);
+$white: var(--white);
+$white-2: var(--white2);
+$white-3: var(--white3);
+$theme-color: var(--theme);
+$theme-color-2: var(--theme2);
+$theme-color-3: var(--theme3);
+$text-color: var(--text);
+$text-color-2: var(--text2);
+$text-color-3: var(--text3);
+$title-color: var(--title);
+$title-color-2: var(--title2);
+$gray-color-1: var(--gray1);
+$header-color: var(--header);
+$header-color-1: var(--header1);
+$border-color: var(--border);
+$border-color-2: var(--border2);
+$bg-color: var(--bg);
+$bg-color-2: var(--bg2);
+$bg-color-3: var(--bg3);
+$bg-color-4: var(--bg4);
+$bg-color-5: var(--bg5);
+$bg-color-6: var(--bg6);
+$shadow: var(--box-shadow);
+$color-gradient-1: var(--color-gradient-1);
+$color-gradient-2: var(--color-gradient-2);
+$color-gradient-3: var(--color-gradient-3);
+$color-gradient-4: var(--color-gradient-4);
+$color-gradient-5: var(--color-gradient-5);
+$color-gradient-6: var(--color-gradient-6);
+$color-gradient-7: var(--color-gradient-7);

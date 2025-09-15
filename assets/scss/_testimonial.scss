@@ -1,0 +1,267 @@
+.testimonils-wrapper{
+    padding:100px 30px;
+    position: relative;
+    background-attachment: fixed;
+    overflow: hidden;
+    z-index: 9;
+    margin-top:10px;
+   
+    @include breakpoint (max-xl){
+        padding:100px 30px;
+    }
+    @include breakpoint (max-lg){
+        padding:70px 30px;
+    }
+    @include breakpoint (max-md){
+        padding:70px 30px;
+    }
+    &::before {
+        @include before;
+        background: linear-gradient(to left, $black 0%, $black 100%);
+        opacity: .5;
+    }
+   
+    .testimonial-image-items {
+        position: relative;
+        .testimonial-image {
+            max-width: 90%;
+            height: 330px;
+            position: relative;
+            text-align: center;
+            margin: 0 auto;
+            @include breakpoint (max-xl) {
+                max-width:90%;
+                height: 330px;
+                 margin: 0 auto;
+               
+            }
+            @include breakpoint (max-lg) {
+                max-width:90%;
+                height: 330px;
+                text-align: center;
+                margin: 0 auto;
+            }
+            @include breakpoint (max-md) {
+                text-align: center;
+                margin: 0 auto;
+            }
+          
+        }
+    }
+    .testimonial-content{
+        margin-top:30px;
+        margin: 0 auto;
+        overflow: hidden;
+        .icon{
+            color: $border-color;
+            font-size:36px;
+            
+        }
+        p{
+            font-weight: 500;
+            color: $border-color;
+            font-size: 16px;
+            margin-top:20px;
+            @include breakpoint (max-md) {
+                font-size:14px;
+             }
+        
+        }
+        .client-info{
+            h5{
+                font-size: 18px;
+                color: $border-color;
+                margin-top:20px;
+                @include breakpoint (max-md) {
+                    font-size:16px;
+                 }
+            }
+        }
+
+    }
+    .array-button{
+        margin-top:60px;
+    }
+
+}
+
+
+.testimonils-section-2{
+    padding:100px 30px;
+    position: relative;
+    @include breakpoint (max-lg) {
+        height:850px;
+    }
+    @include breakpoint (max-md) {
+        height:550px;
+    }
+ 
+    &::before {
+        @include before;
+        background:$white-2;
+        opacity: .5;
+    }
+    .section-title{
+        margin-top:220px;
+        @include breakpoint (max-lg) {
+            margin-top:-8px;
+        }
+        span{
+            color: $header-color-1;
+            z-index: 999;
+            font-family: Mulish;
+            font-size: 16px;
+            font-weight: 500;
+            @include breakpoint (max-xl) {
+                font-size:13px;
+            }
+        }
+        h2{
+            @include breakpoint (max-xl) {
+                font-size:30px;
+            }
+        
+        }
+    }
+   
+    .testimonils-items-info{
+        background-color: $white;
+        position: relative;
+        margin-right:-340px;
+        margin-top:85px;
+        align-items: center;
+        @include breakpoint (max-x14) {
+            margin-right:340px;
+        }
+        @include breakpoint (max-sm) {
+            margin-left:-30px;
+            
+        }
+      
+        .testimonils-items{
+           gap:10px;
+           @include flex;
+            @include transition;
+            @include breakpoint (max-sm) {
+                margin-left:-200px;
+                margin: 0 auto;
+                
+            }
+      
+            .testimonils-image{
+                img{
+                    @include imgw;
+                  
+                }
+            }  
+            .testimonial-content {
+                margin-top:10px;
+                margin-left:10px;
+                @include breakpoint (max-lg) {
+                    margin-left: 15px;
+                }
+              
+                .icon {
+                    font-size: 52px;
+                    color: $theme-color;
+                    margin-bottom:10px;
+                    @include breakpoint (max-lg) {
+                        margin-bottom:8px;
+                    }
+                    @include breakpoint (max-md) {
+                        margin-bottom:6px;
+                    }
+                }
+                h4 {
+                    font-weight:400;
+                    font-size: 24px;
+                    
+                    @include breakpoint (max-lg) {
+                        font-size: 22px;
+                    }
+                    @include breakpoint (max-md) {
+                        font-size: 20px;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-top: 10px;
+                    color: $header-color-1;
+                    @include breakpoint (max-md) {
+                        font-size:14px;
+                     }
+                }
+                .client-info {
+                    margin-top: 30px;
+                    position: relative;
+                    @include breakpoint (max-lg) {
+                        margin-top: 20px;
+                    }
+                       
+                  &::before {
+                    position: absolute;
+                    content: "";
+                    width: 30%;
+                    height: 1px;
+                    background-color:$theme-color;
+                    left: 0;
+                    top: 25px;
+                    opacity: 0.5;
+                  
+                    }
+   
+                    h5{
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: $header-color;
+                        @include breakpoint (max-md) {
+                            font-size:17px;
+                         }
+                    }
+                    p {
+                        color: $header-color-1;
+                        margin-top: 5px;
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+     }
+     .array-button {
+        left:-52%;
+        top:-20%;
+        position: relative;
+        @include breakpoint (max-lg) {
+            left: 2%;
+            top: -93%;
+            
+         }
+            .array-prev{
+                @include transition;
+                &:hover {
+                    background-color: $header-color;
+                    color: $white;
+                    @include transition;
+                }
+               
+                @include breakpoint (max-md) {
+                   display: none;
+                }
+            }
+            .array-next {
+                @include transition;
+                &:hover {
+                    background-color: $white;
+                    color: $theme-color;
+                    @include transition;
+                }
+                @include breakpoint (max-md) {
+                    display: none
+                 }
+            }
+       }
+ }
+   
+

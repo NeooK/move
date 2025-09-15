@@ -1,0 +1,474 @@
+
+//page scroll bar add
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px $theme-color; 
+	border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $theme-color;
+	border-radius: 10px;
+}
+//page scroll bar add
+
+//Basic Code Start
+.fix {
+  overflow: hidden;
+}
+
+.ralt{
+ position: relative;
+}
+
+.ml-100{
+  margin-left: 100px;
+}
+//Basic Code End
+
+//Video Css Start
+.ripple {
+  position: relative;
+
+  &::before,&::after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 60px;
+      height: 60px;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(149, 31, 104, 0.5);
+      -webkit-animation: rippleOne 3s infinite;
+      animation: rippleOne 3s infinite;
+  }
+
+  &::before {
+      -webkit-animation-delay: 0.9s;
+      animation-delay: 0.9s;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+
+  &::after {
+      -webkit-animation-delay: 0.6s;
+      animation-delay: 0.6s;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+}
+//Video Css End
+
+//pagination default
+
+//pagination default
+.swiper-dot,
+.swiper-dot-2 {
+    .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+        transition: 0.6s;
+        background-color: $header-color;
+        opacity: 1;
+        border-radius: 10px;
+        position: relative;
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+        &::before {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            top: -7px;
+            left: -7px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 1px solid $theme-color;
+            content: "";
+        }
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: $theme-color;
+        transition: 0.6s;
+        position: relative;
+        &::before {
+            border: 1px solid $header-color;
+        }
+    }
+}
+
+.array-button {
+   @include flex;
+   gap: 15px;
+   display: flex;
+   align-items: center;
+  .array-next {
+      width:50px;
+      height:50px;
+      line-height:50px;
+      background-color: $theme-color;
+      margin-right: 20px;
+      color: $white;
+      @include transition;
+      @include breakpoint (max-md) {
+          margin-right: 0;
+          margin-bottom: 10px;
+      }
+      @include breakpoint (max-sm) {
+          width: 45px;
+          height: 45px;
+          line-height: 45px;
+      }
+  }
+  .array-prev {
+      width:50px;
+      height:50px;
+      line-height:50px;
+      background-color: $theme-color;
+      color: $white;
+      @include transition;
+      @include breakpoint (max-sm) {
+          width: 45px;
+          height: 45px;
+          line-height: 45px;
+      }
+  }
+}
+
+.love-icon{
+  position: relative;
+  @include flex;
+  gap:10px;
+  margin-top:30px;
+  justify-content: center;
+  &::after {
+      position: absolute;
+      content: "";
+      width:18%;
+      height: 1px;
+      background-color: $theme-color;
+      right:26%;
+      top: 15px;
+      opacity: 0.5;
+      @include breakpoint(max-sm) {
+          width: 30%;
+      }
+  }
+  &::before {
+      position: absolute;
+      content: "";
+      width:18%;
+      height: 1px;
+      background-color: $theme-color;
+      left:26%;
+      top:15px;
+      opacity: 0.5;
+      @include breakpoint(max-sm) {
+          width: 30%;
+      }
+  }
+  .icon-prev {
+      @include transition;
+      i{
+          color: $theme-color;
+          font-size:24px;
+      }
+      &:hover {
+          i{
+              color:$header-color;
+              @include transition;
+          }
+        
+      }
+  }
+  .icon-next {
+      @include transition;
+      i{
+          color: $theme-color;
+          font-size:24px;
+      }
+      &:hover {
+          i{
+              color: $header-color;
+              @include transition;
+          }
+         
+         
+      }
+  }
+
+}
+//pagination default
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+br {
+  @include breakpoint(max-md){
+    display: none;
+  }
+}
+
+.mt-60 {
+  margin-top: 55px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+/* background */
+.bg-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+.bg-cover-2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+//>>>>> Nice Select Css Start <<<<<//
+.nice-select {
+  background-color: transparent;
+  width: unset;
+  outline: none;
+  border-bottom: 2px solid $border-color !important;
+  padding-bottom: 20px !important;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  &:hover {
+      border-bottom: 2px solid transparent;
+      border-image:$color-gradient-5;
+      border-bottom: 2px solid transparent;
+      border-image-slice: 2;
+     
+      
+  }
+  span {
+      font-size: 16px;
+      color: $header-color-1;
+      text-transform: capitalize;
+  }
+}
+
+.nice-select .current {
+  margin-right: 12px;
+}
+
+.nice-select:after {
+  right: 23px;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+  width: 10px;
+  height: 10px;
+  top: 15px;
+  border-bottom: 2px solid transparent;
+  border-image: $color-gradient-5;
+  border-right: 2px solid transparent;
+  border-image-slice: 2;
+}
+
+.nice-select.open .list {
+  background:$header-color;
+  margin-top: 16px;
+  width: 100%;
+  text-transform: capitalize;
+  color:$theme-color;
+}
+
+.nice-select .option.selected.focus {
+  background:$theme-color;
+  outline: none;
+  color: $header-color;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 16px;
+  border: none;
+}
+
+.nice-select .option {
+  border: none;
+}
+
+.nice-select .option:hover {
+  background: transparent;
+}
+
+//>>>>> Nice Select Css End <<<<<//
+
+
+//>>>>>  Back to top button area start here <<<<<//
+.scroll-up {
+	cursor: pointer;
+	display: block;
+	border-radius: 50px;
+	box-shadow: inset 0 0 0 2px $text-color-2;
+	z-index: 99;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(15px);
+	position: fixed;
+	right: 25px;
+	bottom: 35px;
+	height: 50px;
+	width: 50px;
+	transition: var(--transition);
+	&::after {
+		position: absolute;
+		font-family: "Font Awesome 6 Pro";
+		content: "\f176";
+		text-align: center;
+		line-height: 50px;
+		font-weight: 700;
+		font-size: 18px;
+		color:$theme-color;
+		left: 0;
+		top: 0;
+		height: 50px;
+		width: 50px;
+		cursor: pointer;
+		display: block;
+		z-index: 1;
+		transition: var(--transition);
+	}
+	svg path {
+		fill: none;
+	}
+	svg.scroll-circle path {
+		stroke:$theme-color;
+		stroke-width: 4px;
+		box-sizing: border-box;
+		transition: var(--transition);
+	}
+	&.active-scroll {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+}
+
+//>>>>>  Back to top button area End here <<<<<//
+
+.page-nav-wrap {
+  ul {
+      li {
+          display: inline-block;
+
+          .page-numbers {
+              &.current {
+                  background-color: $theme-color;
+                  color: $white;
+              }
+
+              display: inline-block;
+              width:50px;
+              height:50px;
+              line-height:50px;           
+              background: transparent;
+              font-weight: 600;
+              transition: all 0.3s ease-in-out;
+              margin: 0 2px;
+              border: 1px solid $border-color;
+              color: $text-color;
+              border-radius: 50%;
+
+              @media (max-width: 767px) {
+                  margin-top: 10px;
+                  width: 50px;
+                  height: 50px;
+                  line-height: 50px;
+                  font-size: 14px;
+              }
+
+              i {
+                  margin-top: 2px;
+              }
+              &:hover {
+                  background-color: $theme-color;
+                  color: $white;
+                  border: 1px solid transparent;
+              }
+          }
+      }
+  }
+}
+
+.box-color-1 {
+    background-color: rgba(248, 184, 31, 0.15);
+}
+
+.box-color-2 {
+  background-color: rgba(88, 102, 235, 0.15);
+}
+
+.box-color-3 {
+  background-color: rgba(57, 192, 250, 0.15);
+}
+
+.box-color-4 {
+  background-color: rgba(249, 37, 150, 0.15);
+}
+
+.bg-footer {
+    background-color:$header-color !important;
+}
+.border-none {
+    border: none !important;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+.footer-bg {
+  background-color: $header-color-1;
+}
+
+
+.box-shadow {
+  box-shadow: $shadow;
+}
+
+.bor-1 {
+  border: 1px solid $theme-color;
+}
+
+.mb-70 {
+  margin-bottom:70px;
+}
+.mb-30 {
+  margin-bottom:30px;
+}
+.mt-30 {
+  margin-top:30px;
+}
+
+.border-array-style {
+  border: 1px solid $theme-color;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.fz-40 {
+    font-size: 40px;
+}

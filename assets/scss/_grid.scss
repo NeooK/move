@@ -1,0 +1,130 @@
+  .filter-buttons {
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+    @include breakpoint(max-sm) {
+      margin-top: 40px;
+
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 0 5px;
+      border: none;
+      background: $bg-color-5;
+      color: $black;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+      @include transition;
+
+      @include breakpoint(max-sm) {
+        margin: 10px 10px;
+        margin-top: 10px;
+      }
+
+      &.active {
+        background: $theme-color;
+        color: $white;
+        @include transition;
+      }
+
+      &:hover {
+        background: $theme-color;
+        color: $white;
+        @include transition;
+      }
+    }
+  }
+
+  .grid {
+    position: relative;
+    margin: 0 5px;
+    margin-left: 160px;
+
+    @include breakpoint(max-lg) {
+      margin-left: 0px;
+
+
+    }
+
+    .grid-item {
+      justify-items: center;
+      justify-content: center;
+      text-align: center;
+
+      img {
+        width: 387px;
+        height: 286px;
+
+        @include breakpoint(max-sm) {
+          width: 300px;
+
+
+        }
+      }
+
+      a {
+        img {
+          width: 387px;
+          height: 286px;
+        }
+
+      }
+
+      .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 22px;
+        z-index: 9;
+        -webkit-transition: all 300ms ease;
+        transition: all 300ms ease;
+        transition-delay: 0s;
+        transition-delay: 0s;
+        z-index: 3;
+        visibility: hidden;
+        opacity: 0;
+
+        i {
+          color: $white;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(.5);
+        transition: 0.5s all ease;
+        background-color: rgba(31, 29, 29, 0.8);
+
+      }
+
+      &:hover {
+        .icon {
+          -webkit-transform: scale(1) translate(-50%, -50%);
+          transform: scale(1) translate(-50%, -50%);
+          transition-delay: 300ms;
+          opacity: 1;
+          visibility: visible;
+        }
+
+        &::after {
+          opacity: 1;
+          visibility: visible;
+          transform: scale(1);
+          @include transition;
+
+        }
+      }
+
+    }
+  }

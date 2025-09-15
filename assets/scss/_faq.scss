@@ -1,0 +1,66 @@
+.faq-section{
+ .faq-wrapper{
+    padding: 50px 30px;
+    position: relative;
+    background-attachment: fixed;
+    overflow: hidden;
+    .faq-content {
+        .accordion-item {
+            background-color: $white;
+            box-shadow: $shadow;
+            border:0;
+            border-radius: 0;
+       
+            .accordion-header { 
+                .accordion-button { 
+                    font-weight:400;
+                    color:$theme-color;
+                    letter-spacing: -.2px;
+                    border: 0;
+                    border-radius: 0;
+                    box-shadow: none;
+                    background-color: $white;
+                    padding: 25px 30px 0;
+                    text-transform: capitalize;
+                    font-size:18px;
+                    border: none;
+                    font-family:$body-font;
+                    img{
+                        width:10px;
+                        height:10px;
+                        margin-right: 8px;
+                        text-align: center;
+                    }
+    
+                    &.collapsed {
+                        background-color: transparent;
+                        padding: 25px 30px;
+                        color: $header-color;
+                    }
+                  
+                }
+            }
+    
+            .accordion-collapse { 
+                .accordion-body {
+                    padding-right: 130px;
+                    padding-left: 30px;
+                    padding-top: 15px;
+                    color: $header-color-1;
+                    background-color: $white;
+                    padding-bottom: 25px;
+                    font-size:13px;
+    
+                    @include breakpoint (max-xxl){
+                        padding-right: 50px;
+                    }
+    
+                    @include breakpoint (max-lg){
+                        padding-right: 30px;
+                    }
+                }
+            }
+        }
+     }
+  }
+}
